@@ -241,6 +241,22 @@ footer img{width:230px;margin-bottom:20px}
 footer .f{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;
   font-size:.8rem;color:var(--ink-mute);line-height:1.85}
 footer strong{color:var(--ink)}
+/* ---------- video library ---------- */
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin-top:12px}
+.vid{background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:transform .15s,box-shadow .15s}
+.vid:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,33,73,.12)}
+.vid .thumb{width:100%;aspect-ratio:16/9;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.vid .thumb .play{width:60px;height:60px;border-radius:50%;background:rgba(27,58,122,.85);display:flex;align-items:center;justify-content:center;transition:background .15s}
+.vid .thumb .play:after{content:'';display:block;width:0;height:0;border-left:20px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.vid:hover .thumb .play{background:var(--blue)}
+.vid .thumb .dur{position:absolute;bottom:8px;right:8px;background:#000000b3;color:#fff;font-size:.72rem;font-weight:700;padding:3px 7px;border-radius:4px;letter-spacing:.02em}
+.vid .body{padding:16px 18px 18px}
+.vid .body .tag{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:4px}
+.vid .body .tt{font-size:1.02rem;font-weight:700;color:var(--blue-deep);margin-bottom:6px;line-height:1.3}
+.vid .body .desc{font-size:.88rem;color:var(--ink-soft);line-height:1.5;margin:0}
+.vid.placeholder .thumb{background:var(--blue-tint)}
+.vid.placeholder .body .tag{color:var(--ink-faint)}
+.vid.placeholder .body .tt{color:var(--ink-mute)}
 .fine{font-size:.73rem;color:var(--ink-faint);margin-top:22px;line-height:1.7}
 
 @media(max-width:900px){
@@ -368,6 +384,92 @@ footer strong{color:var(--ink)}
         country copies.</p>
         <p class="bn-only"><strong>সারা ভারতে বিস্তার।</strong> দুর্গাপূজা ২০২৮-এর মধ্যে সারা
         দেশে প্রতিষ্ঠিত বাংলা মডেল — যখন বাংলার কাছে এমন কিছু থাকবে যা গোটা দেশ অনুসরণ করবে।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VIDEO LIBRARY ================= -->
+<section id="videos">
+  <div class="wrap">
+    <div class="eyebrow b"><span class="en-only">Watch &amp; Understand</span>
+      <span class="bn-only">দেখুন ও জানুন</span></div>
+    <h2><span class="en-only">Video Library</span><span class="bn-only">ভিডিও লাইব্রেরি</span></h2>
+    <p class="lead en-only">MahAcharyaJi on the League, the model farm, the three-year arc and the
+    thinking behind it. New videos added as they are produced.</p>
+    <p class="lead bn-only">লিগ, মডেল খামার, তিন বছরের পরিকল্পনা ও এর পিছনের চিন্তাভাবনা নিয়ে
+    মহাচার্যজির ভিডিও। নতুন ভিডিও তৈরি হওয়ার সঙ্গে সঙ্গে যুক্ত হচ্ছে।</p>
+
+    <div class="videos">
+      <!-- ===== PLACEHOLDER — replace with actual video embed ===== -->
+      <div class="vid placeholder">
+        <div class="thumb"><div class="play"></div><span class="dur">—:—</span></div>
+        <div class="body">
+          <div class="tag en-only">Coming shortly</div>
+          <div class="tag bn-only">শীঘ্রই</div>
+          <div class="tt en-only">Krishi Ratna League — The Vision</div>
+          <div class="tt bn-only">কৃষি রত্ন লিগ — দৃষ্টিভঙ্গি</div>
+          <p class="desc en-only">MahAcharyaJi introduces the Krishi Ratna League — why a league,
+          why now, and what it means for Bengal's farmers.</p>
+          <p class="desc bn-only">মহাচার্যজি কৃষি রত্ন লিগের পরিচয় দিচ্ছেন — কেন একটি লিগ,
+          কেন এখন, এবং বাংলার চাষিদের জন্য এর অর্থ কী।</p>
+        </div>
+      </div>
+
+      <div class="vid placeholder">
+        <div class="thumb"><div class="play"></div><span class="dur">—:—</span></div>
+        <div class="body">
+          <div class="tag en-only">Coming shortly</div>
+          <div class="tag bn-only">শীঘ্রই</div>
+          <div class="tt en-only">The Model Farm at Munshi Bheri</div>
+          <div class="tt bn-only">মুন্সি ভেড়ির মডেল খামার</div>
+          <p class="desc en-only">A walkthrough of the working model farm — the integrated
+          farming system, the Durgotsav ground, and the vision in practice.</p>
+          <p class="desc bn-only">সচল মডেল খামারের একটি ওয়াকথ্রু — ইন্টিগ্রেটেড ফার্মিং সিস্টেম,
+          দুর্গোৎসবের প্রাঙ্গণ, এবং বাস্তবে দৃষ্টিভঙ্গির রূপ।</p>
+        </div>
+      </div>
+
+      <div class="vid placeholder">
+        <div class="thumb"><div class="play"></div><span class="dur">—:—</span></div>
+        <div class="body">
+          <div class="tag en-only">Coming shortly</div>
+          <div class="tag bn-only">শীঘ্রই</div>
+          <div class="tt en-only">Pravasi Krishi Bandhu — Your Part</div>
+          <div class="tt bn-only">প্রবাসী কৃষি বন্ধু — আপনার ভূমিকা</div>
+          <p class="desc en-only">How the diaspora supporter programme works — your bheete,
+          your farmer, your season, and the open dashboard.</p>
+          <p class="desc bn-only">প্রবাসী সহযোগী কর্মসূচি কী ভাবে কাজ করে — আপনার ভিটে,
+          আপনার চাষি, আপনার মরসুম, এবং খোলা ড্যাশবোর্ড।</p>
+        </div>
+      </div>
+
+      <div class="vid placeholder">
+        <div class="thumb"><div class="play"></div><span class="dur">—:—</span></div>
+        <div class="body">
+          <div class="tag en-only">Coming shortly</div>
+          <div class="tag bn-only">শীঘ্রই</div>
+          <div class="tt en-only">Sthapana · BangaManthan · RashtraManthan</div>
+          <div class="tt bn-only">স্থাপনা · বঙ্গমন্থন · রাষ্ট্রমন্থন</div>
+          <p class="desc en-only">MahAcharyaJi on the three-year roadmap — from Durga Puja 2026
+          to the Bengal Model scaling across India by 2028.</p>
+          <p class="desc bn-only">তিন বছরের পথরেখা নিয়ে মহাচার্যজি — দুর্গাপূজা ২০২৬ থেকে
+          ২০২৮-এর মধ্যে সারা ভারতে বাংলা মডেলের বিস্তার।</p>
+        </div>
+      </div>
+
+      <div class="vid placeholder">
+        <div class="thumb"><div class="play"></div><span class="dur">—:—</span></div>
+        <div class="body">
+          <div class="tag en-only">Coming shortly</div>
+          <div class="tag bn-only">শীঘ্রই</div>
+          <div class="tt en-only">Why Aspiration Matters</div>
+          <div class="tt bn-only">কেন স্বপ্ন দেখা জরুরি</div>
+          <p class="desc en-only">Agriculture didn't fail for want of soil or rain — it failed
+          for want of aspiration. MahAcharyaJi on making farming a young person's ambition.</p>
+          <p class="desc bn-only">বাংলার কৃষি ব্যর্থ হয়নি মাটির অভাবে — ব্যর্থ হয়েছে স্বপ্নের
+          অভাবে। কৃষিকে তরুণ প্রজন্মের উচ্চাকাঙ্ক্ষা করে তোলা নিয়ে মহাচার্যজি।</p>
+        </div>
       </div>
     </div>
   </div>
@@ -748,13 +850,14 @@ footer strong{color:var(--ink)}
         <div class="d"><span class="en-only">Bengal's next great contest. Rules, teams and how
           farmers apply.</span>
           <span class="bn-only">বাংলার পরবর্তী মহা-প্রতিযোগিতা। নিয়ম, দল ও আবেদন।</span></div></a>
-      <a class="lk" href="#register">
-        <div class="k"><span class="en-only">Coming shortly</span><span class="bn-only">শীঘ্রই</span></div>
-        <div class="t"><span class="en-only">Explanatory videos</span>
-          <span class="bn-only">ব্যাখ্যামূলক ভিডিও</span></div>
-        <div class="d"><span class="en-only">MahAcharyaJi on the League, the model farm and the
-          three-year arc. Links to be added.</span>
-          <span class="bn-only">লিগ, মডেল খামার ও তিন বছরের পরিকল্পনা নিয়ে মহাচার্যজি।</span></div></a>
+      <a class="lk" href="#videos">
+        <div class="k"><span class="en-only">Video Library</span><span class="bn-only">ভিডিও লাইব্রেরি</span></div>
+        <div class="t"><span class="en-only">MahAcharyaJi — Explanatory Videos</span>
+          <span class="bn-only">মহাচার্যজি — ব্যাখ্যামূলক ভিডিও</span></div>
+        <div class="d"><span class="en-only">Watch and understand the League, the model farm, the
+          three-year arc and your part in it. New videos added as they are produced.</span>
+          <span class="bn-only">লিগ, মডেল খামার, তিন বছরের পরিকল্পনা ও আপনার ভূমিকা — দেখুন ও
+          জানুন। নতুন ভিডিও তৈরি হওয়ার সঙ্গে সঙ্গে যুক্ত হচ্ছে।</span></div></a>
     </div>
   </div>
 </section>
